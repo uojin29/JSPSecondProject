@@ -1,4 +1,4 @@
-package example.util;
+package com.example.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public class JDBCUtil {
 	    Connection con=null;
 	    try{
 	        Class.forName("com.mysql.jdbc.Driver");
-	        con= DriverManager.getConnection("jdbc:mysql://walab.handong.edu.net:3306/p2_22000631","p2_22000631","EeKoh6ue3o");
+	        con= DriverManager.getConnection("jdbc:mysql://walab.handong.edu:3306/p2_22000631","p2_22000631","EeKoh6ue3o");
 	    }catch(Exception e){
 	    	System.out.println(e);
 	    }
