@@ -11,7 +11,8 @@ public class MemberVO {
 	private String gender;
 	private Date regdate;
 	private int cnt;
-	
+	private String photo;
+
 	public int getSeq() {
 		return seq;
 	}
@@ -50,4 +51,6 @@ public class MemberVO {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
+	public String getPhoto() {return photo;}
+	public void setPhoto(String photo) {this.photo = photo;}
 }

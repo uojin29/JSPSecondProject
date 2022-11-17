@@ -53,6 +53,7 @@
 	<th>Password</th>
 	<th>PhoneNumber</th>
 	<th>Gender</th>
+	<th>Photo</th>
 	<th>Regdate</th>
 	<th>Edit</th>
 	<th>Delete</th>
@@ -65,6 +66,7 @@
 		<td>${u.getPassword()}</td>
 		<td>${u.getPnum()}</td>
 		<td>${u.getGender()}</td>
+		<td><img src="${pageContext.request.contextPath }/upload/${u.getPhoto()}" class="photo" width="150px" height="100px"></td>
 		<td>${u.getRegdate()}</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
